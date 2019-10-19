@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Cards bootstrap</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 </script><link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -19,21 +9,30 @@
         <div class="row">    
         
         <div class="col-md-6">
+          <!---------------card one----------------->                                 
           <div class="card card-01">
           <div class="card-body">
-            <h5 class="card-title">Hey!</h5>
-            <p class="card-text">I am: </p>  
             
+            <!-------Greeting---------->
+            
+            <h5 class="card-title">Hey!</h5>
+            
+            <!-------Gender question---------->
+            
+            <p class="card-text">I am: </p>  
+      
             <button type="button" class="btn btn-outline-dark">Male</button>
             <button type="button" class="btn btn-outline-dark">Female</button>
             <button type="button" class="btn btn-outline-dark">Others/Prefer not to say</button>
             
-            <p class="card-text">A happy ---- years old triangle.</p>
+            <!-------age question---------->
             
-           
+            <p class="card-text">A happy ---- years old triangle.</p> 
             <div class="input-group mb-2">
               <input type="text" class="form-control" placeholder="age" aria-label="age" aria-describedby="basic-addon2">
             </div>
+            
+            <!-------occupation question---------->
             
             <p class="card-text">I am: </p> 
             <button type="button" class="btn btn-outline-dark">Student</button>
@@ -41,18 +40,83 @@
             <button type="button" class="btn btn-outline-dark">Self-employed</button>
             <button type="button" class="btn btn-outline-dark">Employed</button>
             
-            <p class="card-text">What are you investing for?</p>
+            <!-------Next botton to go to second card---------->
             
-            <button type="button" class="btn btn-outline-dark">Retirement</button>
-            <button type="button" class="btn btn-outline-dark">Buying a house</button>
-            <button type="button" class="btn btn-outline-dark">Making a purchase</button>
+            <a href="#" class="btn btn-default text-uppercase">Next</a>
+          </div>
+        </div> 
+          
+          <!---------------card two----------------->
+          <div class="card card-01">
+          <div class="card-body">
+            <h5 class="card-title">A bit about me:</h5>
             
-            <a href="#" onclick="toggle_visibility('foo');">Click here to toggle visibility of element #foo</a>
-<div id="foo">This is foo</div>
+            <!-------leasure question---------->
+            
+            <p class="card-text">My monthly budget’s amount going into the leasure activities such as going                 out is:</p>  
+            
+            <button type="button" class="btn btn-outline-dark">less than 5%</button>
+            <button type="button" class="btn btn-outline-dark">between 5% to 15%</button>
+            <button type="button" class="btn btn-outline-dark">over 15%</button>
+            
+            <!-------investment question---------->
+            
+            <p class="card-text">My monthly budget’s amount being saved and invested is:</p>  
+            
+            <button type="button" class="btn btn-outline-dark">less than 5%</button>
+            <button type="button" class="btn btn-outline-dark">between 5% to 15%</button>
+            <button type="button" class="btn btn-outline-dark">over 15%</button>
+            
+            <!-------familiarity with investment question---------->
+            
+            <p class="card-text">How familiar are you with investment?</p>
+            
+            <button type="button" class="btn btn-outline-dark">Not familiar at all</button>
+            <button type="button" class="btn btn-outline-dark">A little but I am not confident to pull the trigger alone</button>
+            <button type="button" class="btn btn-outline-dark">I do investment passively and pay a financial investor.</button>
+            <button type="button" class="btn btn-outline-dark">I frequently trade stocks and do not need a financial advisor.</button>
+          
+            <!-------Next to the page three---------->
             
             <a href="#" class="btn btn-default text-uppercase">Next</a>
           </div>
         </div>
+          
+          <!---------------card three----------------->
+          <div class="card card-01">
+          <div class="card-body">
+ 
+            <!-------future financail plans---------->
+            
+            <p class="card-text">What are your future financial goals?</p>  
+            
+            <button type="button" class="btn btn-outline-dark">Comfortable retirement </button>
+            <button type="button" class="btn btn-outline-dark">Buying a house</button>
+            <button type="button" class="btn btn-outline-dark">Making a big purchase</button>
+            <button type="button" class="btn btn-outline-dark">All of the above</button>
+            
+            <!-------the amount of investment per month---------->
+            
+            <p class="card-text">The amount I can dedicate to save per month:</p>
+            
+            <div class="input-group mb-2">
+              <input type="text" class="form-control" placeholder="per month" aria-label="per-month" aria-describedby="basic-addon2">
+            </div>
+            
+            <!-------risk tolerance question---------->
+
+            <p class="card-text">when it comes to risk:</p>
+            
+            <button type="button" class="btn btn-outline-dark">I always play it safe! Least risk and loss.</button>
+            <button type="button" class="btn btn-outline-dark">I like it moderate, risk sometimes to gain more.</button>
+            <button type="button" class="btn btn-outline-dark">I make calculated risks.</button>
+            <button type="button" class="btn btn-outline-dark">I’m willing to risk it all for the most return.</button>
+            
+            <!-------submit button---------->
+            
+            <a href="#" class="btn btn-default text-uppercase">Submit</a>
+          </div>
+        </div>      
         </div>
           
           
@@ -63,8 +127,3 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
-</body>
-</html>
