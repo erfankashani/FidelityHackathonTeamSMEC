@@ -28,13 +28,13 @@ var svgContainer = document.getElementById('svgContainer');
 var animItem = bodymovin.loadAnimation({
   wrapper: svgContainer,
   animType: 'svg',
+  autoplay: false,
   loop: false,
   path: 'https://raw.githubusercontent.com/saamerm/FidelityHackathonTeamSMEC/master/Lottie/data2.json'
 });
 function Reverse() {
   console.log("ADG");
-  x *= -1;
-  animItem.setSpeed(x);
+  animItem.play();
 }
 
 $('.btn').click(function () {
