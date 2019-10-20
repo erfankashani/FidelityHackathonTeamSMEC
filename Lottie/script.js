@@ -5,7 +5,7 @@ var animItem = bodymovin.loadAnimation({
   wrapper: svgContainer,
   animType: 'svg',
   loop: true,
-  path: 'https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json'
+  path: 'https://raw.githubusercontent.com/saamerm/FidelityHackathonTeamSMEC/master/Lottie/data2.json'
 });
 function Reverse() {
   console.log("ADG");
