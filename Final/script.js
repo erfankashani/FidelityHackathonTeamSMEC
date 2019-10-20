@@ -15,7 +15,6 @@ function FinalSubmit(){
   $( ".container1" ).hide();
   $( ".container2" ).show();
   NextAnimation();
-  
 }
 
 $(document).ready(function() {
@@ -34,8 +33,10 @@ var animItem = bodymovin.loadAnimation({
   loop: false,
   path: 'https://raw.githubusercontent.com/saamerm/FidelityHackathonTeamSMEC/master/Lottie/data2.json'
 });
+
+var counter = 1;
 function   NextAnimation() {
-  console.log("ADG");
+  console.log("ADG" + counter++);
   animItem.play();
   setInterval("animItem.pause();", 7000);
 }
