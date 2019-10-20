@@ -11,11 +11,16 @@ function SecondNext(){
 
 function FinalSubmit(){
   console.log("Submit button");
+  $( ".container1" ).hide();
+  $( ".container2" ).show();
+  
 }
 
 $(document).ready(function() {
     $( ".card-03" ).hide();
     $( ".card-02" ).hide();
+    $( ".container2" ).hide();
+    
 });
 
 var x = 1;
@@ -23,7 +28,7 @@ var svgContainer = document.getElementById('svgContainer');
 var animItem = bodymovin.loadAnimation({
   wrapper: svgContainer,
   animType: 'svg',
-  loop: true,
+  loop: false,
   path: 'https://raw.githubusercontent.com/saamerm/FidelityHackathonTeamSMEC/master/Lottie/data2.json'
 });
 function Reverse() {
@@ -31,3 +36,7 @@ function Reverse() {
   x *= -1;
   animItem.setSpeed(x);
 }
+
+$('.btn').click(function () {
+  $(this).toggleClass("active"); //addCss("active");
+})
